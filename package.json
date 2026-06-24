@@ -1,0 +1,33 @@
+{
+  "name": "multi-tenant-shell",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-tenant white-label frontend: a shell app + swappable brand theme packages",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*",
+    "themes/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/player-shell",
+    "build": "npm run build -w apps/player-shell",
+    "test": "npm run test -w apps/player-shell",
+    "typecheck": "npm run typecheck -w apps/player-shell",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.5.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
+  }
+}

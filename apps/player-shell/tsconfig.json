@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node", "vite/client", "vitest/globals", "@testing-library/jest-dom"],
+    "paths": {
+      "@mts/theme-kit": ["../../packages/theme-kit/src"],
+      "theme-tenant-alpha": ["../../themes/theme-tenant-alpha/src"]
+    }
+  },
+  "include": ["src", "vite.config.ts", ".storybook/**/*"]
+}

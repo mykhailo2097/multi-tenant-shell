@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@mts/theme-kit": ["../../packages/theme-kit/src"]
+    }
+  },
+  "include": ["src"]
+}

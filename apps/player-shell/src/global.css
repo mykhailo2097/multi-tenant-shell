@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@source "../../../packages/theme-kit/src";
+@source "../../../themes/theme-tenant-alpha/src";
+
+@theme inline {
+  --color-brand-primary: var(--brand-color-primary);
+  --color-brand-on-primary: var(--brand-color-primary-contrast);
+  --color-brand-surface: var(--brand-color-surface);
+  --color-brand-surface-muted: var(--brand-color-surface-muted);
+  --color-brand-border: var(--brand-color-border);
+  --color-brand-text: var(--brand-color-text);
+  --color-brand-text-muted: var(--brand-color-text-muted);
+  --color-brand-danger: var(--brand-color-danger);
+  --radius-brand: var(--brand-radius);
+  --shadow-brand: var(--brand-shadow);
+  --font-brand: var(--brand-font);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--brand-font, system-ui, sans-serif);
+    color: var(--brand-color-text, #1c2430);
+    background: var(--brand-color-surface-muted, #f4f5f7);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--brand-color-primary, #2f6fed);
+    outline-offset: 2px;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  input,
+  select {
+    font: inherit;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--brand-radius, 6px);
+    border: 1px solid var(--brand-color-border, #d8dce3);
+    background: var(--brand-color-surface, #fff);
+    color: inherit;
+  }
+
+  select {
+    appearance: none;
+  }
+}

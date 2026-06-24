@@ -1,0 +1,14 @@
+.theme-tenant-alpha {
+  --brand-color-primary: #7b2ff7;
+  --brand-color-primary-contrast: #ffffff;
+  --brand-color-surface: #ffffff;
+  --brand-color-surface-muted: #f6f1ff;
+  --brand-color-border: #e3d6fb;
+  --brand-color-text: #241a36;
+  --brand-color-text-muted: #6b5e85;
+  --brand-color-danger: #d6336c;
+
+  --brand-radius: 14px;
+  --brand-font: "Trebuchet MS", system-ui, sans-serif;
+  --brand-shadow: 0 6px 20px rgba(123, 47, 247, 0.18);
+}
